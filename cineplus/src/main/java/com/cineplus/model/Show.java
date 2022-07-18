@@ -7,8 +7,8 @@ public class Show {
     
     private Integer id;
     private Integer screen_type;
-    private Integer movie_id;
-    private Integer room_id;
+    private Integer id_movie;
+    private Integer id_room;
     private LocalDate date;
     private LocalTime time;
 
@@ -32,20 +32,20 @@ public class Show {
         this.screen_type = screen_type;
     }
 
-    public Integer getMovie_id() {
-        return movie_id;
+    public Integer getId_movie() {
+        return id_movie;
     }
 
-    public void setMovie_id(Integer movie_id) {
-        this.movie_id = movie_id;
+    public void setId_movie(Integer id_movie) {
+        this.id_movie = id_movie;
     }
 
-    public Integer getRoom_id() {
-        return room_id;
+    public Integer getId_room() {
+        return id_room;
     }
 
-    public void setRoom_id(Integer room_id) {
-        this.room_id = room_id;
+    public void setId_room(Integer id_room) {
+        this.id_room = id_room;
     }
 
     public LocalDate getDate() {
@@ -66,6 +66,6 @@ public class Show {
 
     @Override
     public String toString() {
-        return "Show{" + "id=" + id + ", screen_type=" + screen_type + ", movie_id=" + movie_id + ", room_id=" + room_id + ", date=" + date + ", time=" + time + '}';
+        return "Show{" + "id=" + id + ", screen_type=" + screen_type + ", id_movie=" + id_movie + ", id_room=" + id_room + ", date=" + date + ", time=" + time + '}';
     }
 }

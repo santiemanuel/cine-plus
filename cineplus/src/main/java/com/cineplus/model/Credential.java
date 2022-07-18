@@ -7,7 +7,7 @@ public class Credential {
     private Integer id;
     private String salt_and_hash;
     private String pass_algo;
-    private Integer user_id;
+    private Integer id_user;
 
     public Credential() {
 
@@ -46,16 +46,16 @@ public class Credential {
         this.pass_algo = pass_algo;
     }
 
-    public Integer getUser_id() {
-        return user_id;
+    public Integer getId_user() {
+        return id_user;
     }
 
-    public void setUser_id(Integer user_id) {
-        this.user_id = user_id;
+    public void setId_user(Integer id_user) {
+        this.id_user = id_user;
     }
 
     @Override
     public String toString() {
-        return "Credential{" + "id=" + id + ", salt_and_hash=" + salt_and_hash + ", pass_algo=" + pass_algo + ", user_id=" + user_id + '}';
+        return "Credential{" + "id=" + id + ", salt_and_hash=" + salt_and_hash + ", pass_algo=" + pass_algo + ", id_user=" + id_user + '}';
     }
 }
