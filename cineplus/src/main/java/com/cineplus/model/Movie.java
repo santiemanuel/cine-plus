@@ -9,7 +9,7 @@ public class Movie {
     private String description;
     private Integer runtime;
     private LocalDate release_date;
-    private Integer id_imdb;
+    private String id_imdb;
 
     public Movie() {
 
@@ -55,11 +55,11 @@ public class Movie {
         this.release_date = release_date;
     }
 
-    public Integer getId_imdb() {
+    public String getId_imdb() {
         return id_imdb;
     }
 
-    public void setId_imdb(Integer id_imdb) {
+    public void setId_imdb(String id_imdb) {
         this.id_imdb = id_imdb;
     }
 
