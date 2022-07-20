@@ -1,13 +1,15 @@
 package com.cineplus.model;
 
+import java.time.LocalDate;
+
 public class Movie {
     
     private Integer id;
     private String title;
     private String description;
-    private String director;
-    private Integer length;
-    private Integer id_genre;
+    private Integer runtime;
+    private LocalDate release_date;
+    private Integer id_imdb;
 
     public Movie() {
 
@@ -37,33 +39,33 @@ public class Movie {
         this.description = description;
     }
 
-    public String getDirector() {
-        return director;
+    public Integer getRuntime() {
+        return runtime;
     }
 
-    public void setDirector(String director) {
-        this.director = director;
+    public void setRuntime(Integer runtime) {
+        this.runtime = runtime;
     }
 
-    public Integer getLength() {
-        return length;
+    public LocalDate getRelease_date() {
+        return release_date;
     }
 
-    public void setLength(Integer length) {
-        this.length = length;
+    public void setRelease_date(LocalDate release_date) {
+        this.release_date = release_date;
     }
 
-    public Integer getId_genre() {
-        return id_genre;
+    public Integer getId_imdb() {
+        return id_imdb;
     }
 
-    public void setId_genre(Integer id_genre) {
-        this.id_genre = id_genre;
+    public void setId_imdb(Integer id_imdb) {
+        this.id_imdb = id_imdb;
     }
 
     @Override
     public String toString() {
-        return "Movie{" + "id=" + id + ", title=" + title + ", description=" + description + ", director=" + director + ", length=" + length + ", id_genre=" + id_genre + '}';
+        return "Movie{" + "id=" + id + ", title=" + title + ", description=" + description + ", runtime=" + runtime + ", release_date=" + release_date + ", id_imdb=" + id_imdb + '}';
     }
     
 }
