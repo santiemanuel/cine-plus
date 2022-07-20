@@ -2,7 +2,6 @@ package com.cineplus.sql;
 
 import java.io.FileInputStream;
 import java.io.FileNotFoundException;
-import java.io.FileReader;
 import java.io.IOException;
 import java.sql.Connection;
 import java.sql.DriverManager;
@@ -20,9 +19,6 @@ public class DbConnection {
 			String propFile = new String("JDBCConnection.properties");
 			
 			try {
-				
-                System.out.println(System.getProperty("user.dir"));
-                // show the path for the file
 				prop.load(new FileInputStream(propFile));
 			
 			} catch (FileNotFoundException e) {
